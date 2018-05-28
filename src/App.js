@@ -1,16 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import BandInput from './components/BandInput';
 import Bands from './components/Bands';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <BandInput store={this.props.store} />
-        <Bands store={this.props.store}/>
-      </div>
-    );
-  }
+const App = (props) => {
+  return (
+    <div className="App">
+      <BandInput store={ props.store } />
+      <Bands store={ props.store }/>
+    </div>
+  );
 };
-
 export default App;
